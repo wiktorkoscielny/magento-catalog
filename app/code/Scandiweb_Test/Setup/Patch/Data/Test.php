@@ -8,6 +8,7 @@
  */
 
 declare (strict_types=1);
+namespace Scandiweb\ScandiwebTest\Setup\Patch\Data;
 
 use Magento\Catalog\Api\CategoryLinkManagementInterface;
 use Magento\Catalog\Api\Data\ProductInterfaceFactory;
@@ -38,30 +39,37 @@ class Scandiweb_Test implements DataPatchInterface
      * @var ProductInterfaceFactory
      */
     protected ProductInterfaceFactory $productInterfaceFactory;
+
     /**
      * @var ProductRepositoryInterface
      */
     protected ProductRepositoryInterface $productRepository;
+
     /**
      * @var State
      */
     protected State $appState;
+
     /**
      * @var StoreManagerInterface
      */
     protected StoreManagerInterface $storeManager;
+
     /**
      * @var SourceItemInterfaceFactory
      */
     protected SourceItemInterfaceFactory $sourceItemFactory;
+
     /**
      * @var SourceItemsSaveInterface
      */
     protected SourceItemsSaveInterface $sourceItemsSaveInterface;
+
     /**
      * @var EavSetup
      */
     protected EavSetup $eavSetup;
+    
     /**
      * @var array
      */
